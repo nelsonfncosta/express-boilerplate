@@ -1,15 +1,25 @@
 # express-boilerplate
-A bare bones REST API using Express, which uses Winston for logging
 
-## Install 
-`npm install`
+A bare-bones REST API using Express, which uses Winston for logging
+
+## Install
+
+`yarn`
+
 ## Startup
-`NODE_ENV=development npm start`
+
+`yarn start`
+
+You can test via `curl`
+
+`curl --include --no-buffer http://localhost:2000/`
+
 ## Logging
-### Logging level
-`NODE_ENV=development LOGGING_LEVEL=debug npm start`
+
 ### Logging directory
+
 The logging directory is specified using the `LOGGING_DIRECTORY` variable in the config file.
 
 ## Configuration
+
 Uses separate config files in `/config` for each environment i.e `development`,`test`, and `production`
